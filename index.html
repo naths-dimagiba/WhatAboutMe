@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="greeting">
+                    <p class="greet">
+                        Hi!, I am Nathaniel Dimagiba.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="all">
+                    <button id="button">Click to view my profile</button>
+                    <audio controls="" hidden id="song" loop>
+                        <source src="/files/rickroll.mp3" type="audio/mpeg"> Your browser was fucked.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("button").addEventListener("click", function() {
+            document.title = "Rick Rolled 🤣"
+            document.body.style.backgroundImage = "url(/files/rickroll.gif)"
+            document.body.style.backgroundSize = "200px 250px"
+            document.querySelector(".all").style.display = "none"
+            document.querySelector(".greet").style.display = "none"
+            var song = document.getElementById("song")
+            song.volume = 1
+            song.play()
+        })
+    </script>
+</body>
+</html>
