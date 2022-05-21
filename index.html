@@ -6,6 +6,7 @@
     <title>WELCOME</title>
     <link rel="stylesheet" href="/bs/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 <body>
     <div class="container-fluid">
@@ -31,17 +32,6 @@
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById("button").addEventListener("click", function() {
-            document.title = "Rick Rolled 🤣"
-            document.body.style.backgroundImage = "url(/files/rickroll.gif)"
-            document.body.style.backgroundSize = "200px 250px"
-            document.querySelector(".all").style.display = "none"
-            document.querySelector(".greet").style.display = "none"
-            var song = document.getElementById("song")
-            song.volume = 1
-            song.play()
-        })
-    </script>
+    <script src="/myscript.js"></script>
 </body>
 </html>
